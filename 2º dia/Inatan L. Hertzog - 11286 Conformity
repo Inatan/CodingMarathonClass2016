@@ -1,0 +1,25 @@
+#include <iostream>
+#include <queue> 
+
+using namespace std;
+
+int main()
+{
+    int n,j, i,sum,val,cost;
+    
+    while(cin >> n && n>0){  
+        map <vector<int>,int> m;
+        for (i =0; i< n; i++){
+            vector<int> v[5];
+            for(j=0;j<5;j++)
+                cin >> v[j];
+            sort(v.begin(),v.end());
+            mp[v]++;
+        }
+        interpret=0;
+        qnt=0;
+        
+        cout << cost << endl;
+    }
+    return 0;
+}

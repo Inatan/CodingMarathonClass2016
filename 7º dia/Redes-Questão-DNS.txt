@@ -1,0 +1,17 @@
+﻿1) x.inf.ufrgs.br -> dns.ufrgs.br (retorna y.inf.ufrgs.br) -> x.inf.ufrgs.br
+
+2) y.inf.ufrgs.br -> dns.ufrgs.br -> dns raiz (retorna pir.org) ->
+                     dns.ufrgs.br -> pir.org  (retorna acm.org) ->
+                     dns.ufrgs.br -> dns.acm.org (retorna www.acm.org) ->
+                     dns.ufrgs.br (encaminha) -> y.inf.ufrgs.br
+
+3) x.inf.ufrgs.br -> dns.ufrgs.br -> dns.acm.org (retorna servbr.acm.org) ->
+                     dns.ufrgs.br (encaminha) -> x.inf.ufrgs.br
+
+4) y.inf.ufrgs.br -> dns.ufrgs.br -> dns.acm.org (retorna smtp.acm.org) ->
+                     dns.ufrgs.org (encaminha) -> y.inf.ufrgs.br
+
+5) x.inf.ufrgs.br -> dns.ufrgs.br -> pir.org (retorna dns.wikimedia.org) ->
+                     dns.ufrgs.br -> dns.wikimedia.org (retorna smtp.wikimedia.org) ->
+                     dns.ufrgs.br (encaminha) -> x.inf.ufrgs.br
+

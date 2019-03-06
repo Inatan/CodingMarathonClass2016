@@ -1,0 +1,70 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <sstream>
+#include <map>
+#include <typeinfo>
+
+using namespace std;
+
+
+int main()
+{
+    int caseNumber=1, n,i,j;
+    bool found;
+    string t,anwser,result;
+    bool outputerror,justspace;
+    cin >> n;
+    while(n){
+            justspace=false;
+            outputerror=false;    
+            getline(cin,anwser);
+            getline(cin,t);
+            if(t==anwser){
+                result="Yes";
+            }
+            else{
+                j=0;
+                if(str.find_first_not_of(' ') != string::npos){
+                     result="Wrong Answer";
+                }
+                else{
+                    for(i=0;i<anwser.length() && !outputerror; i++)
+                    {   
+                        
+
+                        if(anwser[i] != t[j] && t[j]==' '){
+                            result="Output Format Error";
+                            outputerror=true;
+                        }
+                    }
+                    if(!outputerror){
+                        result="Wrong Answer";
+                    }
+                }
+            }
+            /*for (string::iterator it=t.begin(); it!=t.end(); ++it)
+            {
+                found=false;
+                if (((*it) >= 'a' && (*it) <= 'z' )|| ((*it) >= 'A' && (*it) <= 'Z')) {
+                    for(i=0;i<1000 && !found; i++)
+                    {
+                        if(stacks[i].empty())
+                        {
+                            stacks[i].push(*it);
+                            counter++;
+                            found=true;
+                        }
+                        if(stacks[i].top() <= (*it)){
+                            stacks[i].push(*it);
+                            found=true;
+                        }
+                    }
+
+                }
+            }*/
+            cout << "Case " <<caseNumber << ": " << result<< endl; 
+            caseNumber++;
+            n--;
+       }
+}
